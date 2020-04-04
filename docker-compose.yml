@@ -1,0 +1,12 @@
+# This file is for docker configuration
+version: "3"
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/django_api_drf
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
