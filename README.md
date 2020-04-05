@@ -1,7 +1,7 @@
 # rest_framework_with_docker
 
 ###### Add docker file and build setup ######
-# Follow 17th video on udemy. abm21719@
+###### Follow 17th video on udemy. abm21719@ ######
 * `After creating setup run this command : docker build .`
 
 * `After running this command if you get the below error :-->
@@ -14,7 +14,7 @@ Got permission denied while trying to connect to the Docker daemon socket at uni
 
 
 ###### Then comes to docker-compose.yml file. ######
-# Follow 17th video on udemy. abm21719@
+###### Follow 17th video on udemy. abm21719@ ######
 * `after writing all code in docker-compose.yml run this command : docker-compose build`
 
 * `After running this command if you find this error :
@@ -32,7 +32,19 @@ For more on the Compose file format versions, see https://docs.docker.com/compos
 * `then again run the command : docker-compose build`
 
 ###### Create project  ######
-
 * `command : docker-compose run app sh -c "django-admin.py startproject django_api_drf ."`
 * `create .travis.yml file`
 * `create .flake8 file inside app folder"message: added flake8 and travis CI configuration"`
+
+######  Testing command  ( optional )######
+* `docker-compose run app sh -c "python manage.py test"`
+
+###### If you find error : flake8: not found ######
+* ` Run this command : docker-compose build `
+
+
+###### Creating app using Docker ######
+* `docker-compose run app sh -c "python manage.py startapp core"`
+
+###### Run Migration ######
+* `Migration command with docker : docker-compose run app sh -c "python manage.py makemigrations <app_name (its optional)>"`

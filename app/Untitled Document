@@ -1,0 +1,1 @@
+Migration command with docker : docker-compose run app sh -c "python manage.py makemigrations <app_name [its optional]>"
