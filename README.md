@@ -36,7 +36,7 @@ For more on the Compose file format versions, see https://docs.docker.com/compos
 * `create .travis.yml file`
 * `create .flake8 file inside app folder"message: added flake8 and travis CI configuration"`
 
-######  Testing command  ( optional )######
+######  Testing command  ( optional ) ######
 * `docker-compose run app sh -c "python manage.py test"`
 
 ###### If you find error : flake8: not found ######
